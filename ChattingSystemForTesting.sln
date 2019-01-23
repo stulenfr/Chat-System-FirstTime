@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChattingSystemForTesting", "ChattingSystemForTesting\ChattingSystemForTesting.csproj", "{FFD4C12C-D1DB-4441-ADA0-E855932604CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messenger", "Chat\Messenger.csproj", "{007AF00B-A3AD-4C0F-8512-34DC73D68C24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FFD4C12C-D1DB-4441-ADA0-E855932604CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFD4C12C-D1DB-4441-ADA0-E855932604CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFD4C12C-D1DB-4441-ADA0-E855932604CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{007AF00B-A3AD-4C0F-8512-34DC73D68C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007AF00B-A3AD-4C0F-8512-34DC73D68C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007AF00B-A3AD-4C0F-8512-34DC73D68C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007AF00B-A3AD-4C0F-8512-34DC73D68C24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
