@@ -27,13 +27,33 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			this.MainContainer = new System.Windows.Forms.Panel();
+			this.SuspendLayout();
+			// 
+			// MainContainer
+			// 
+			this.MainContainer.Location = new System.Drawing.Point(21, 80);
+			this.MainContainer.Name = "MainContainer";
+			this.MainContainer.Size = new System.Drawing.Size(285, 444);
+			this.MainContainer.TabIndex = 0;
+			// 
+			// frmMain
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Text = "Form1";
+			this.ClientSize = new System.Drawing.Size(330, 600);
+			this.Controls.Add(this.MainContainer);
+			this.Name = "frmMain";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "Messenager";
+			this.Load += new System.EventHandler(this.frmMain_Load);
+			this.ResumeLayout(false);
+
 		}
 
 		#endregion
+
+		private System.Windows.Forms.Panel MainContainer;
 	}
 }
 

@@ -23,5 +23,10 @@ namespace Chat
 			manager.ColorScheme = new ColorScheme(Primary.Blue400, Primary.Blue500, Primary.Blue500, Accent.LightGreen400,TextShade.BLACK);
 
 		}
+
+		private void frmMain_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
