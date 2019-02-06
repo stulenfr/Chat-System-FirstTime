@@ -29,6 +29,8 @@
 		{
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.lollipopLabel1 = new LollipopLabel();
+			this.lollipopTextBox1 = new LollipopTextBox();
+			this.lollipopButton1 = new LollipopButton();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -46,18 +48,47 @@
 			// 
 			this.lollipopLabel1.AutoSize = true;
 			this.lollipopLabel1.BackColor = System.Drawing.Color.Transparent;
-			this.lollipopLabel1.Font = new System.Drawing.Font("Roboto Medium", 10F);
+			this.lollipopLabel1.Font = new System.Drawing.Font("Arial Black", 10F);
 			this.lollipopLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-			this.lollipopLabel1.Location = new System.Drawing.Point(69, 243);
+			this.lollipopLabel1.Location = new System.Drawing.Point(57, 273);
 			this.lollipopLabel1.Name = "lollipopLabel1";
-			this.lollipopLabel1.Size = new System.Drawing.Size(164, 22);
+			this.lollipopLabel1.Size = new System.Drawing.Size(108, 24);
 			this.lollipopLabel1.TabIndex = 1;
-			this.lollipopLabel1.Text = "lollipopLabel1";
+			this.lollipopLabel1.Text = "Your name";
+			// 
+			// lollipopTextBox1
+			// 
+			this.lollipopTextBox1.FocusedColor = "#508ef5";
+			this.lollipopTextBox1.FontColor = "blue";
+			this.lollipopTextBox1.IsEnabled = true;
+			this.lollipopTextBox1.Location = new System.Drawing.Point(61, 298);
+			this.lollipopTextBox1.MaxLength = 32767;
+			this.lollipopTextBox1.Multiline = false;
+			this.lollipopTextBox1.Name = "lollipopTextBox1";
+			this.lollipopTextBox1.ReadOnly = false;
+			this.lollipopTextBox1.Size = new System.Drawing.Size(192, 24);
+			this.lollipopTextBox1.TabIndex = 2;
+			this.lollipopTextBox1.Text = "help me";
+			this.lollipopTextBox1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.lollipopTextBox1.UseSystemPasswordChar = false;
+			// 
+			// lollipopButton1
+			// 
+			this.lollipopButton1.BackColor = System.Drawing.Color.Transparent;
+			this.lollipopButton1.BGColor = "#508ef5";
+			this.lollipopButton1.FontColor = "#ffffff";
+			this.lollipopButton1.Location = new System.Drawing.Point(61, 328);
+			this.lollipopButton1.Name = "lollipopButton1";
+			this.lollipopButton1.Size = new System.Drawing.Size(143, 41);
+			this.lollipopButton1.TabIndex = 3;
+			this.lollipopButton1.Text = "Sign In";
 			// 
 			// ucLogin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.lollipopButton1);
+			this.Controls.Add(this.lollipopTextBox1);
 			this.Controls.Add(this.lollipopLabel1);
 			this.Controls.Add(this.pictureBox1);
 			this.Name = "ucLogin";
@@ -72,5 +103,7 @@
 
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private LollipopLabel lollipopLabel1;
+		private LollipopTextBox lollipopTextBox1;
+		private LollipopButton lollipopButton1;
 	}
 }
