@@ -16,5 +16,10 @@ namespace Chat
 		{
 			InitializeComponent();
 		}
+
+		private void btnSignIn_Click(object sender, EventArgs e)
+		{
+			frmMain.Instance.Content.Controls.Add(new ucMain() { Dock = DockStyle.Fill });
+		}
 	}
 }
