@@ -46,7 +46,7 @@ namespace Chat
 		private void frmMain_Load(object sender, EventArgs e)
 		{
 			_Instance = this;
-			MainContainer.Controls.Add(new ucLogin());
+			MainContainer.Controls.Add(new ucLogin() {Dock=DockStyle.Fill });
 		}
 	}
 }
