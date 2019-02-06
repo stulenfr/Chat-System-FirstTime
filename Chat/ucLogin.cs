@@ -20,6 +20,7 @@ namespace Chat
 		private void btnSignIn_Click(object sender, EventArgs e)
 		{
 			frmMain.Instance.Content.Controls.Add(new ucMain() { Dock = DockStyle.Fill });
+			frmMain.Instance.Content.Controls[0].SendToBack();
 		}
 	}
 }
