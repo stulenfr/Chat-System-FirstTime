@@ -30,7 +30,7 @@
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.lollipopLabel1 = new LollipopLabel();
 			this.lollipopTextBox1 = new LollipopTextBox();
-			this.lollipopButton1 = new LollipopButton();
+			this.btnSignIn = new LollipopButton();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -72,22 +72,23 @@
 			this.lollipopTextBox1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
 			this.lollipopTextBox1.UseSystemPasswordChar = false;
 			// 
-			// lollipopButton1
+			// btnSignIn
 			// 
-			this.lollipopButton1.BackColor = System.Drawing.Color.Transparent;
-			this.lollipopButton1.BGColor = "#508ef5";
-			this.lollipopButton1.FontColor = "#ffffff";
-			this.lollipopButton1.Location = new System.Drawing.Point(61, 328);
-			this.lollipopButton1.Name = "lollipopButton1";
-			this.lollipopButton1.Size = new System.Drawing.Size(143, 41);
-			this.lollipopButton1.TabIndex = 3;
-			this.lollipopButton1.Text = "Sign In";
+			this.btnSignIn.BackColor = System.Drawing.Color.Transparent;
+			this.btnSignIn.BGColor = "#508ef5";
+			this.btnSignIn.FontColor = "#ffffff";
+			this.btnSignIn.Location = new System.Drawing.Point(61, 328);
+			this.btnSignIn.Name = "btnSignIn";
+			this.btnSignIn.Size = new System.Drawing.Size(143, 41);
+			this.btnSignIn.TabIndex = 3;
+			this.btnSignIn.Text = "Sign In";
+			this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
 			// 
 			// ucLogin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.lollipopButton1);
+			this.Controls.Add(this.btnSignIn);
 			this.Controls.Add(this.lollipopTextBox1);
 			this.Controls.Add(this.lollipopLabel1);
 			this.Controls.Add(this.pictureBox1);
@@ -104,6 +105,6 @@
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private LollipopLabel lollipopLabel1;
 		private LollipopTextBox lollipopTextBox1;
-		private LollipopButton lollipopButton1;
+		private LollipopButton btnSignIn;
 	}
 }
