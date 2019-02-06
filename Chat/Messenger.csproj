@@ -100,6 +100,12 @@
     <Compile Include="ucLogin.Designer.cs">
       <DependentUpon>ucLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMain.Designer.cs">
+      <DependentUpon>ucMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIManagers\DrawHelper.cs" />
     <Compile Include="UIManagers\FontManager.cs" />
     <EmbeddedResource Include="frmMain.resx">
@@ -117,6 +123,9 @@
     </Compile>
     <EmbeddedResource Include="ucLogin.resx">
       <DependentUpon>ucLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMain.resx">
+      <DependentUpon>ucMain.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
