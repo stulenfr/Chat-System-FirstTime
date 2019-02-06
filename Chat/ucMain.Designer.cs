@@ -35,6 +35,10 @@
 			this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.listBox1.FormattingEnabled = true;
 			this.listBox1.ItemHeight = 16;
+			this.listBox1.Items.AddRange(new object[] {
+            "jack",
+            "lucy",
+            "tom"});
 			this.listBox1.Location = new System.Drawing.Point(0, 0);
 			this.listBox1.Name = "listBox1";
 			this.listBox1.Size = new System.Drawing.Size(418, 602);
