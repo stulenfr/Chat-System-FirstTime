@@ -14,6 +14,19 @@ namespace Chat
 {
 	public partial class frmMain : MaterialForm
 	{
+
+		private static frmMain _Instance;
+
+		public static frmMain Instance
+		{
+			get 
+			{
+				if (_Instance == null) 
+					_Instance = new frmMain();
+				return _Instance;
+			}
+		}
+
 		public frmMain()
 		{
 			InitializeComponent();
@@ -24,9 +37,16 @@ namespace Chat
 
 		}
 
+		public Panel Content
+		{
+			get { return MainContainer; }
+			set { MainContainer = value; }
+		}
+
 		private void frmMain_Load(object sender, EventArgs e)
 		{
-
+			_Instance = this;
+			MainContainer.Controls.Add(new ucLogin());
 		}
 	}
 }
