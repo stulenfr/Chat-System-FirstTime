@@ -22,5 +22,10 @@ namespace Chat
 			manager.Theme = MaterialSkinManager.Themes.DARK;
 			manager.ColorScheme = new ColorScheme(Primary.Blue400, Primary.Blue500, Primary.Blue500, Accent.LightGreen400, TextShade.BLACK);
 		}
+
+		private void textBox1_TextChanged(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
